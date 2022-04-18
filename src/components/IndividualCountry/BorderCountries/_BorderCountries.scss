@@ -1,0 +1,11 @@
+.border-countries {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.border-country-button {
+  @extend .back-button;
+  margin-left: 10px;
+  padding: 10px 20px;
+}

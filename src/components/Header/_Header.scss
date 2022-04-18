@@ -1,0 +1,25 @@
+@import '../ToggleMode/ToggleMode';
+
+.header {
+  align-items: center;
+  background-color: themes.$secondary-background;
+  box-shadow: 0 2px 5px themes.$shadow;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.main-heading-anchor {
+  text-decoration: none;
+}
+
+.main-heading-text {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 520px) {
+  .main-heading-text {
+    font-size: 22px;
+  }
+}

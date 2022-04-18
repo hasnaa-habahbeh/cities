@@ -1,0 +1,25 @@
+@import '../IndividualCountryData/IndividualCountryData';
+
+.country {
+  align-items: center;
+  display: flex;
+  gap: 100px;
+  height: 450px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .country {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.country-flag {
+  border-radius: 4px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  height: 100%;
+  max-width: 650px;
+  object-fit: cover;
+  width: 100%;
+}

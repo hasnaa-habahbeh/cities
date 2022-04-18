@@ -1,0 +1,17 @@
+@use '../../../styles/sass/base/themes';
+
+.back-button {
+  background-color: themes.$secondary-background;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  cursor: pointer;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+}
+
+.back-button-icon {
+  margin-right: 6px;
+  vertical-align: bottom;
+}

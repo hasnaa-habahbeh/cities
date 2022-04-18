@@ -1,0 +1,97 @@
+@use './colors';
+
+$primary-background: colors.$white-98;
+$secondary-background: colors.$white-100;
+$shadow: colors.$white-88;
+$input: colors.$white-52;
+$text: colors.$black;
+
+.light {
+  background-color: $primary-background;
+}
+
+.dark {
+  $primary-background: colors.$veryDarkBlue;
+  $secondary-background: colors.$darkBlue;
+  $text: colors.$white-98;
+  $shadow: colors.$faded-black;
+  $input: colors.$white-88;
+
+  background-color: $primary-background;
+
+  * {
+    color: $text !important;
+  }
+
+  .header {
+    background-color: $secondary-background;
+    box-shadow: 0 2px 5px $shadow;
+  }
+
+  .filtering-container {
+    .search-container {
+      background-color: $secondary-background;
+      box-shadow: 0 2px 5px $shadow;
+
+      .search-icon {
+        fill: $input;
+      }
+    }
+
+    ::placeholder {
+      color: $input;
+    }
+
+    :-ms-input-placeholder {
+      color: $input;
+    }
+
+    ::-ms-input-placeholder {
+      color: $input;
+    }
+
+    .dropdown {
+      &-label {
+        background-color: $secondary-background;
+        box-shadow: 0 2px 5px $shadow;
+
+        &-text {
+          color: $input;
+        }
+
+        &-icon {
+          fill: $input;
+        }
+      }
+
+      &-list {
+        background-color: $secondary-background;
+        box-shadow: 0 2px 5px $shadow;
+
+        &-item {
+          color: $input;
+        }
+      }
+    }
+  }
+
+  .country-card {
+    background-color: $secondary-background;
+    box-shadow: 0 2px 5px $shadow;
+
+    &-field {
+      color: darken($text, 20%);
+    }
+  }
+
+  .back-button {
+    background-color: $secondary-background;
+    box-shadow: 0 2px 5px $shadow;
+  }
+
+  .country {
+    &-flag {
+      box-shadow: 0 2px 5px $shadow;
+    }
+  }
+}

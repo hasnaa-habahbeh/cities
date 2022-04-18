@@ -1,0 +1,23 @@
+.toggle-mode {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.toggle-mode-icon {
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 520px) {
+  .toggle-mode {
+    padding: 10px;
+  }
+
+  .toggle-mode-icon {
+    margin: 0;
+  }
+
+  .toggle-mode-text {
+    display: none;
+  }
+}

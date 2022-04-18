@@ -1,0 +1,16 @@
+@import '../SearchBox/SearchBox';
+@import '../Dropdown/Dropdown';
+
+.filtering-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .filtering-container {
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}

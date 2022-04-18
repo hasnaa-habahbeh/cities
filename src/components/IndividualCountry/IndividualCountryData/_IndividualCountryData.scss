@@ -1,0 +1,30 @@
+@import '../BorderCountries/BorderCountries';
+
+.country-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 100%;
+}
+
+.country-data-name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.country-data-items {
+  display: flex;
+  gap: 200px;
+  line-height: 30px;
+}
+
+.data-filed-heading {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1400px) {
+  .country-data-items {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,39 @@
+.country-card {
+  background-color: themes.$secondary-background;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  cursor: pointer;
+  height: 380px;
+  max-width: 350px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%;
+}
+
+.country-card-flag {
+  height: 200px;
+  max-width: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.country-card-field {
+  color: lighten(themes.$text, 20%);
+  padding: 6px 30px;
+}
+
+.country-card-country-name {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 26px 30px 10px;
+}
+
+.country-card-field-heading {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 520px) {
+  .country-card {
+    margin: auto;
+  }
+}

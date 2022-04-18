@@ -1,0 +1,25 @@
+@import '../DropdownItems/DropdownItems';
+
+.dropdown {
+  max-width: 240px;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-label {
+  background-color: themes.$secondary-background;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px themes.$shadow;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px;
+  width: 100%;
+}
+
+.dropdown-label-text {
+  color: themes.$input;
+}
+.dropdown-label-icon {
+  fill: themes.$input;
+}
